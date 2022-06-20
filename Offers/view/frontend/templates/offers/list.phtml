@@ -1,0 +1,30 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Dnd\Offers\Block\Adminhtml\Offer\ $block */
+
+?>
+<div id="Offer_Bar">
+    <div><?php $block->getImage()?></div>
+    <div id="description"><?php $block->getDescription()?></div>
+    <button><a href="<?php $block->getUrlRedirection()?>">EN SAVOIR PLUS</a></button>
+
+</div>
+
+<style>
+    #Offer_Bar {
+        background-color: whitesmoke;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #description{
+        width : 50%;
+    }
+</style>

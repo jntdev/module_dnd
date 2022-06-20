@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::marketing">
+                    <resource id="Magento_CatalogRule::promo">
+                        <resource id="Dnd_Offers::offer_head" title="Module DnD" sortOrder="100">
+                            <resource id="Dnd_Offers::offer" title="Offers" sortOrder="10">
+                                <resource id="Dnd_Offers::offer_save" title="Save Offer" sortOrder="10"/>
+                                <resource id="Dnd_Offers::offer_delete" title="Delete Offer" sortOrder="20"/>
+                            </resource>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

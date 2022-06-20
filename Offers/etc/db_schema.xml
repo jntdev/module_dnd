@@ -1,0 +1,17 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="categories_offers">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="varchar" name="label" nullable="false" default="" comment="Offer's Label"/>
+        <column xsi:type="varchar" name="image" nullable="false" default="" length="255" comment="Offer's Image"/>
+        <column xsi:type="varchar" name="url_redirection" nullable="false" default="" length="255"
+                comment="Offer's Url"/>
+        <column xsi:type="varchar" name="selected_category" nullable="false" default="" length="255"
+                comment="Offer's category"/>
+        <column xsi:type="datetime" name="start_date_display" nullable="true" comment="Offer's start"/>
+        <column xsi:type="datetime" name="end_date_display" nullable="true" comment="Offer's end"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+</schema>

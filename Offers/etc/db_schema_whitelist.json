@@ -1,0 +1,16 @@
+{
+    "offers": {
+        "column": {
+            "id_column": true,
+            "label": true,
+            "image": true,
+            "url_redirection": true,
+            "selected_category": true,
+            "start_date_display": true,
+            "end_date_display": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
